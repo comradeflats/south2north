@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>South to North: The Motorbike Quest</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="app-layout">
+        <aside class="sidebar">
+            <h2>Quest Log</h2>
+            <div id="questLog" class="quest-log">
+                Current Quest: Talk to the flower vendor to find a way to earn money.
+            </div>
+        </aside>
+
+        <main class="main-panel">
+            <div class="game-image-container">
+                <img id="locationImage" src="images/saigon_city.png" alt="Current Location" />
+            </div>
+
+            <div id="logBox" class="log-box"></div>
+
+            <div class="command-line">
+                <input type="text" id="commandInput" placeholder="Type your command..." autofocus />
+            </div>
+        </main>
+    </div>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JYZDN9G89T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JYZDN9G89T');
+</script>
+
+    <script src="sounds.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
